@@ -19,7 +19,7 @@ const TapGlobe = () => {
     const [clickCoordinate, setClickCoordinate] = useState<ClickCoords[]>([])
     const [isTapping, setIsTapping] = useState<boolean>()
 
-    const { addPoints, decreaseTapsLeft, tapLimit, currentTapsLeft, increaseTapsLeft, tapInBoostMode } = usePointsStore()
+    const { addPoints(0), decreaseTapsLeft, tapLimit, currentTapsLeft, increaseTapsLeft, tapInBoostMode } = usePointsStore()
     const { secondsLeft, decreaseSecondsLeft } = useBoostersStore()
     const { multiClickLevel } = useBoostersStore()
 
