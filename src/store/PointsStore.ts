@@ -15,6 +15,7 @@ type Points = {
   lastTap: number;
   tapInBoostMode: (count: number) => void;
   initializePoints: (initial: number) => void;
+  tapLimit: number;
 };
 
 export const usePointsStore = create<Points>((set, get) => ({
