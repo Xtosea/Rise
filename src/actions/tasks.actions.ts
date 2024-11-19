@@ -63,7 +63,7 @@ export async function completeTask({
     if (taskCompletion) return "taskAlreadyCompleted";
 
     await TasksCompletion.create({
-      reward: task.points,
+      reward: task[0].points,
       taskId,
       userId,
     });
